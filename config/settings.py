@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_filters",
     "django_extensions",
+    # Apps
+    "core.apps.CoreConfig",
 ]
 
 MIDDLEWARE = [
@@ -92,7 +94,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": os.getenv('DJANGO_DB_ENGINE'),
+        "ENGINE": os.getenv("DJANGO_DB_ENGINE"),
         "NAME": os.getenv("DJANGO_DB_NAME"),
         "HOST": os.getenv("DJANGO_DB_HOST"),
         "USER": os.getenv("DJANGO_DB_USER"),
@@ -150,7 +152,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-# Media files 
+# Media files
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
