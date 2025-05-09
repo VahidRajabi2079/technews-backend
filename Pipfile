@@ -8,6 +8,13 @@ django = "*"
 djoser = "*"
 djangorestframework = "*"
 djangorestframework-simplejwt = "*"
+mysqlclient = "*"
+social-auth-app-django = "*"
+python-dotenv = "*"
+python-slugify = "*"
+django-filter = "*"
+django-debug-toolbar = "*"
+django-extensions = "*"
 
 [dev-packages]
 
