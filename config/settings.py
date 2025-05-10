@@ -215,3 +215,9 @@ DJOSER = {
         "user_delete": ["rest_framework.permissions.IsAdminUser"],
     },
 }
+
+# Social Login (Google, GitHub)
+SOCIAL_AUTH_GITHUB_KEY = os.getenv("SOCIAL_AUTH_GITHUB_KEY")
+SOCIAL_AUTH_GITHUB_SECRET = os.getenv("SOCIAL_AUTH_GITHUB_SECRET")
+SOCIAL_AUTH_GITHUB_SCOPE = ["user:email"]
+SOCIAL_AUTH_GITHUB_EXTRA_DATA = ["email", "name"]

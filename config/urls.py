@@ -26,8 +26,8 @@ urlpatterns = [
     # Authentications Urls
     path("auth/", include("djoser.urls")),
     path("auth/", include("djoser.urls.jwt")),
-    # path("auth/", include("djoser.social.urls")),
-    # path("auth/o/", include("social_django.urls", namespace="social")),
+    path("auth/", include("djoser.social.urls")),
+    path("auth/o/", include("social_django.urls", namespace="social")),
 ]
 
 # if settings.DEBUG:
