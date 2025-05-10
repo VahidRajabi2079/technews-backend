@@ -28,6 +28,8 @@ urlpatterns = [
     path("auth/", include("djoser.urls.jwt")),
     path("auth/", include("djoser.social.urls")),
     path("auth/o/", include("social_django.urls", namespace="social")),
+    # News Url
+    path("news/", include("news.urls")),
 ]
 
 # if settings.DEBUG:
