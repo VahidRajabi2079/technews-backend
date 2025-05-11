@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_filters",
     "django_extensions",
+    "rest_framework_tracking",
+    "drf_yasg",
     # Authentication App
     "core.apps.CoreConfig",
     # News App
