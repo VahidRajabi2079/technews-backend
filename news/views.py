@@ -10,7 +10,7 @@ from . import models, serializers, filters, permisions
 
 class TagViewSwt(LoggingMixin, ModelViewSet):
     serializer_class = serializers.TagSerializer
-    queryset = models.Tag.objects.all()
+    queryset = models.Tag.objects.all().order_by('-id')
     pagination_class = PageNumberPagination
     PageNumberPagination.page_size = 10
     # permission_classes = [IsAdminUser]
