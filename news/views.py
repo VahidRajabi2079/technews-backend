@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAdminUser
 from rest_framework.pagination import PageNumberPagination
 from rest_framework_tracking.mixins import LoggingMixin
 
-from . import models, serializers, filters, permisions
+from . import models, permissions, serializers, filters
 
 
 class TagViewSwt(LoggingMixin, ModelViewSet):
@@ -23,6 +23,6 @@ class NewsViewSet(LoggingMixin, ModelViewSet):
     )
     filter_backends = [DjangoFilterBackend]
     filterset_class = filters.NewsFilter
-    # permission_classes = [permisions.IsAdminOrReadOnly]
+    # permission_classes = [permissions.IsAdminOrReadOnly]
     pagination_class = PageNumberPagination
     PageNumberPagination.page_size = 2
