@@ -18,6 +18,7 @@ django-extensions = "*"
 drf-yasg = "*"
 pytest = "*"
 pytest-django = "*"
+scrapy = "*"
 
 [dev-packages]
 
